@@ -270,9 +270,9 @@ b3b = -1.376213
 
 my_tibble = tibble(
   category = c("Linear Regression","LSS Manual","LSS Optim","MLL Manual","MLL Optim"), 
-  Beta = round((c(m1, m2a, m2b, m3a, m3b), 4), 
+  Beta = c(m1, m2a, m2b, m3a, m3b), 
   Intercept = c(b1, b2a, b2b, b3a, b3b)
-))
+)
 
 # I do not know why it is rounding itself :( they are actually slightly different but roudned htey turn into the same thing 
 # The only difference is that my manual fits have an intercept of 0 because I assumed that you can't have a negatively sized dragon and manually set hte minimum intercept to be at 0 
